@@ -1,0 +1,109 @@
+body > .input-type
+{
+    padding: 5px;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    margin-top: 5% !important;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+    padding: 0;
+    margin: 2px;
+    display: none;
+
+}
+
+.testt
+{
+    animation-name: textClickAnimation;
+    animation-duration: 450ms;
+}
+
+.winMessage
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    font-size: 2vw;
+    bottom: 50%;
+    display: none;
+}
+
+@keyframes textClickAnimation{
+    0%
+    {
+        transform:scale(100%);
+        border: 0px;
+    }
+    50%
+    {
+        transform:scale(150%);
+        border: 0px;
+    }
+    100%{
+        
+        transform:scale(100%);
+        border: 0px;
+    }
+
+}
+
+.inline-div-line
+{
+    position: absolute;
+    height: inherit;
+    display: inline-flex;
+    width: 30px;
+    background-color: rgba(0,0,0,20%);
+    display: none /*TODO create lines*/;
+}
+.input-type
+{
+    background-color: lightcoral;
+}
+
+
+.container:hover > div > div:hover
+{
+    background-color: lightcoral;
+}
+
+.first-row, .second-row, .third-row
+{
+    text-align: center;
+}
+
+
+#i6, #i7
+{
+    border-bottom: 2px solid black;
+}
+#i2, #i5
+{
+    border-right: 2px solid black;
+}
+#i0, #i3, #i1, #i4
+{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+#i0, #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8
+{
+    transition: transform .3s ease, background-color .3s ease;
+    color: rgba(128, 128, 128, 20%);
+    font-size: 100px;
+    user-select: none;
+    font-weight: bold;
+    cursor:default ;
+}
